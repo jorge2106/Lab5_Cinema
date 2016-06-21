@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<cinema>
+    <billboard>
+        <movie id="76215">
+            <name>El conjuro 2</name>
+            <sinopsis>Lorraine y Ed Warren, quienes,  en una de sus más aterradoras 
+                investigaciones paranormales, viajan al norte de Londres para ayudar 
+                a una madre soltera con cuatro hijos que vive en una casa repleta de espíritus 
+                malignos.</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+        <movie id="32412">
+            <name>Civil War</name>
+            <sinopsis>Encuentra a 
+                Steve Rogers como líder del recién formado equipo de Los Vengadores
+                en sus continuos esfuerzos por salvaguardar la humanidad. 
+                Pero, luego de que otro incidente -que los involucra- deja daños 
+                colaterales, aumenta la presión política para instalar un sistema 
+                de responsabilidad y control, encabezado por un órgano de gobierno 
+                que supervise y dirija al equipo. El nuevo status quo fractura a Los 
+                Vengadores en dos facciones: una, liderada por Steve Rogers y su deseo 
+                de que Los Vengadores permanezcan libres para defender la humanidad 
+                sin interferencias del gobierno, y, la otra, surgida a partir de la 
+                sorpresiva decisión de Tony Stark de apoyar la supervisión y rendición
+                de cuentas al gobierno.</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+        <movie id="41235">
+            <name>Warcratf El primer encuentro</name>
+            <sinopsis>El pacífico reino de Azeroth se ve atacado por una invasión de 
+                orcos, quienes han dejado su destruido reino en búsqueda de uno nuevo
+                por conquistar. Al abrirse un portal que conecta ambos mundos, 
+                un ejército se enfrentará a la destrucción, mientras que el otro a 
+                la extinción. Dos héroes, uno de cada bando, están a punto de chocar
+                en un enfrentamiento que cambiará el destino de sus familias y pueblos.</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+        <movie id="74112">
+            <name>DeadPool</name>
+            <sinopsis>Basada en el antihéroe menos convencional de Marvel Comics, 
+                DEADPOOL cuenta la historia del origen del exagente de las Fuerzas 
+                Especiales convertido en mercenario Wade Wilson, quien después de 
+                estar sometido a un experimento no autorizado que lo deja con poderes 
+                de sanación acelerados, adopta el álter ego Deadpool. Armado con sus 
+                nuevas habilidades y un sentido del humor negro y retorcido, Deadpool 
+                caza al hombre que casi destruyó su vida. “NO ES UNA PELICULA PARA MENORES
+                DE 15 AÑOS. CONTIENE VIOLENCIA EXPLICITA”</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+        <movie id="76215">
+            <name>Money Monster: El maestro del Dinero</name>
+            <sinopsis>En este tenso thriller, Lee Gates (Clooney) es un pomposo presentador 
+                de TV cuyo popular programa sobre finanzas lo convirtió en el gurú de Wall Street.
+                Pero luego de pregonar acciones de una compañía de tecnología que misteriosamente
+                cae, un inversor furioso (O´Connell) toma como rehenes a Gate, a su equipo y a 
+                su productora Patty Fenn (Roberts) en vivo durante la transmisión del show. 
+                De a poco y en tiempo real, Gates y Fenn deben encontrar la forma de mantenerse 
+                vivos y simultáneamente descubrir la verdad detrás de una maraña de mentiras millonarias.</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+        <movie id="76215">
+            <name>Las Tortugas Ninja 2</name>
+            <sinopsis>Miguel Ángel, Donatelo, Leonardo y Rafael regresan a los cines 
+                de todo el mundo a pelear contra villanos más grandes y aun más malvados, 
+                junto con April O’Neil (Megan Fox), Vern Fenwick (Will Arnett) y un nuevo 
+                integrante: el vigilante y portador de la máscara de Hockey, Casey Jones 
+                (Stephen Amell). Después de que el supervillano Shredder escapa de la custodia 
+                policiaca, une fuerzas con científico loco, Baxter Stockman (Tyler Perry) y 
+                dos torpes secuaces, Bebop (Gary Anthony Williams) y Rocksteady (estrella de 
+                la WWE Stephen "Sheamus" Farrelly), para desatar su plan diabólico para 
+                dominar el mundo. A medida que las tortugas se preparan para detener a 
+                Shredder y a su nuevo equipo, se encuentran frente a un mal aún mayor, 
+                con intenciones similares: el notorio Krang</sinopsis>
+            <urlImage></urlImage>
+            <urlVideo></urlVideo>
+        </movie>
+    </billboard>
+</cinema>
