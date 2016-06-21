@@ -1,6 +1,6 @@
 <%-- 
-    Document   : newjsp
-    Created on : 21/06/2016, 09:49:27 AM
+    Document   : movieSelected
+    Created on : 21/06/2016, 10:26:30 AM
     Author     : Jorge
 --%>
 
@@ -17,6 +17,5 @@
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
-
     </body>
 </html>

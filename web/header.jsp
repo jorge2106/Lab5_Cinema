@@ -1,1 +1,1 @@
-<header>Cine para el Tico !!</header>
+<header>Cinema</header>
