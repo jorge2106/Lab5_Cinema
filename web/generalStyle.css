@@ -13,8 +13,8 @@ body {
 }
 
 header {
-    background: transparent;
-    color: black;
+    background: black;
+    color: white;
     font-style: initial;
     font-weight: bold;
     font-family: serif;
@@ -33,37 +33,11 @@ div {
     margin: 5px;
 }
 
-nav {
-    line-height:30px;
-    background-color:steelblue;
-    height:300px;
-    width:80px;
-    float:left;
-    padding:5px;
-    margin: 3px;
-}
-
 section {
     color: black;
     background: chartreuse;
     padding: 5px;
     margin: 3px;
     margin-left: 100px;
-}
-
-img {
-    float: left;
-    width:181px;
-    height:140px;
-}
-
-footer {
-    clear: both;  
-    position: absolute;
-    text-align: center;
-    background: lightseagreen;
-    width: 98.5%;
-    bottom: 0;
-    height: 60px;  
 }
 

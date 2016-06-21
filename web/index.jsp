@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="generalStyle.css">
-        <title>CineMaticks</title>
+        <title>Cine para el Tico !!</title>
     </head>
     <body>
         <%@include file="header.jsp" %>
