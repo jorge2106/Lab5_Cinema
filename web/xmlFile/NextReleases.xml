@@ -6,7 +6,6 @@ and open the template in the editor.
 -->
 
 
-<root>
     <nextReleases>
         <movie id="16537">
             <name>Día de la Independencia 2</name>
@@ -64,4 +63,3 @@ and open the template in the editor.
             <urlVideo>https://www.youtube.com/watch?v=qBZMzO5M6qY</urlVideo>
         </movie>
     </nextReleases>
-</root>
