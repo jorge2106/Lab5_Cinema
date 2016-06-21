@@ -6,60 +6,62 @@ and open the template in the editor.
 -->
 
 
-    <nextReleases>
-        <movie id="16537">
-            <name>Día de la Independencia 2</name>
-            <sinopsis>Siempre supimos que regresarían. Después de que DÍA DE LA 
-                INDEPENDENCIA redefiniera el género de película suceso, el 
-                siguiente capítulo épico entrega una catástrofe mundial a una 
-                escala inimaginable. Usando tecnología alienígena encontrada, 
-                las naciones de la Tierra han colaborado en un inmenso programa 
-                de defensa para proteger al planeta. Pero nada puede prepararnos
-                para el avance de los extraterrestres y su fuerza sin precedentes.
-                Sólo el ingenio de unos cuantos hombres y mujeres valientes puede
-                traer a nuestro mundo de regreso del borde de la extinción.</sinopsis>
-            <urlImage>img/Dia de la independencia.jpg</urlImage>
-            <urlVideo>https://www.youtube.com/watch?v=TbMdWwQbeG8</urlVideo>
-        </movie>
-        <movie id="18927">
-            <name>La Era de Hielo: Choque de Mundos</name>
-            <sinopsis>La épica persecución de Scrat de la escurridiza bellota, 
-                lo catapulta a un universo donde accidentalmente desata una serie
-                de eventos cósmicos que transforman y amenazan al mundo de La Era
-                de Hielo. Para salvarse, Sid, Manny, Diego y el resto de la manada
-                deben abandonar su hogar y embarcarse en una búsqueda llena de comedia
-                y aventura, viajando a tierras exóticas nuevas y encontrando una
-                colección de coloridos nuevos personajes.</sinopsis>
-            <urlImage>img/La era de hielo.jpg</urlImage>
-            <urlVideo>https://www.youtube.com/watch?v=FjQqW_W4Pug</urlVideo>
-        </movie>
-        <movie id="82920">
-            <name>La Leyenda de Tarzán</name>
-            <sinopsis>Han pasado varios años desde que el hombre alguna vez 
-                conocido como Tarzán dejó la selva africana para vivir una buena
-                vida bajo el nombre de John Clayton III, Lord Greystoke, con su 
-                amada esposa Jane a su lado. Ahora, ha sido invitado al Congo 
-                para oficiar de emisario del Parlamento, sin saber que no es más
-                que un instrumento en una mortal conspiración de codicia y venganza
-                planeada por el capitán belga Leon Rom. Pero quienes están detrás 
-                de este complot asesino no tienen idea de lo que están a punto de 
-                desatar.</sinopsis>
-            <urlImage>img/Tarzan.jpg</urlImage>
-            <urlVideo>https://www.youtube.com/watch?v=HwW1EkE9FnA</urlVideo>
-        </movie>
-        <movie id="72120">
-            <name>Los Ilusionistas 2</name>
-            <sinopsis>Un año después de engañar al FBI y ganar la adulación del 
-                público con sus espectáculos de magia al estilo Robin Hood, Los 
-                Cuatro Jinetes reaparecen en una actuación aún más impresionante
-                con la esperanza de exponer las prácticas poco éticas de un magnate
-                de la tecnología. El hombre detrás de su acto de desaparición no
-                es otro que Walter Mabry (Daniel Radcliffe), un prodigio en la 
-                tecnología que pone en peligro a los Jinetes y los lleva a cometer
-                un asalto aún más peligroso. Su única esperanza es llevar a cabo 
-                un último truco sin precedentes para limpiar sus nombres y revelar
-                la mente maestra detrás de todo.</sinopsis>
-            <urlImage>img/s3leDCmmN94U5IK-360x540.jpg</urlImage>
-            <urlVideo>https://www.youtube.com/watch?v=qBZMzO5M6qY</urlVideo>
-        </movie>
-    </nextReleases>
+<nextReleases
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation ="NextReleasesSchema.xsd"> 
+    <movie id="16537">
+        <name>Día de la Independencia 2</name>
+        <sinopsis>Siempre supimos que regresarían. Después de que DÍA DE LA 
+            INDEPENDENCIA redefiniera el género de película suceso, el 
+            siguiente capítulo épico entrega una catástrofe mundial a una 
+            escala inimaginable. Usando tecnología alienígena encontrada, 
+            las naciones de la Tierra han colaborado en un inmenso programa 
+            de defensa para proteger al planeta. Pero nada puede prepararnos
+            para el avance de los extraterrestres y su fuerza sin precedentes.
+            Sólo el ingenio de unos cuantos hombres y mujeres valientes puede
+            traer a nuestro mundo de regreso del borde de la extinción.</sinopsis>
+        <urlImage>img/Dia de la independencia.jpg</urlImage>
+        <urlVideo>https://www.youtube.com/watch?v=TbMdWwQbeG8</urlVideo>
+    </movie>
+    <movie id="18927">
+        <name>La Era de Hielo: Choque de Mundos</name>
+        <sinopsis>La épica persecución de Scrat de la escurridiza bellota, 
+            lo catapulta a un universo donde accidentalmente desata una serie
+            de eventos cósmicos que transforman y amenazan al mundo de La Era
+            de Hielo. Para salvarse, Sid, Manny, Diego y el resto de la manada
+            deben abandonar su hogar y embarcarse en una búsqueda llena de comedia
+            y aventura, viajando a tierras exóticas nuevas y encontrando una
+            colección de coloridos nuevos personajes.</sinopsis>
+        <urlImage>img/La era de hielo.jpg</urlImage>
+        <urlVideo>https://www.youtube.com/watch?v=FjQqW_W4Pug</urlVideo>
+    </movie>
+    <movie id="82920">
+        <name>La Leyenda de Tarzán</name>
+        <sinopsis>Han pasado varios años desde que el hombre alguna vez 
+            conocido como Tarzán dejó la selva africana para vivir una buena
+            vida bajo el nombre de John Clayton III, Lord Greystoke, con su 
+            amada esposa Jane a su lado. Ahora, ha sido invitado al Congo 
+            para oficiar de emisario del Parlamento, sin saber que no es más
+            que un instrumento en una mortal conspiración de codicia y venganza
+            planeada por el capitán belga Leon Rom. Pero quienes están detrás 
+            de este complot asesino no tienen idea de lo que están a punto de 
+            desatar.</sinopsis>
+        <urlImage>img/Tarzan.jpg</urlImage>
+        <urlVideo>https://www.youtube.com/watch?v=HwW1EkE9FnA</urlVideo>
+    </movie>
+    <movie id="72120">
+        <name>Los Ilusionistas 2</name>
+        <sinopsis>Un año después de engañar al FBI y ganar la adulación del 
+            público con sus espectáculos de magia al estilo Robin Hood, Los 
+            Cuatro Jinetes reaparecen en una actuación aún más impresionante
+            con la esperanza de exponer las prácticas poco éticas de un magnate
+            de la tecnología. El hombre detrás de su acto de desaparición no
+            es otro que Walter Mabry (Daniel Radcliffe), un prodigio en la 
+            tecnología que pone en peligro a los Jinetes y los lleva a cometer
+            un asalto aún más peligroso. Su única esperanza es llevar a cabo 
+            un último truco sin precedentes para limpiar sus nombres y revelar
+            la mente maestra detrás de todo.</sinopsis>
+        <urlImage>img/s3leDCmmN94U5IK-360x540.jpg</urlImage>
+        <urlVideo>https://www.youtube.com/watch?v=qBZMzO5M6qY</urlVideo>
+    </movie>
+</nextReleases>

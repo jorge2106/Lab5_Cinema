@@ -5,7 +5,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<billboard>
+<billboard
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation ="BillboardSchema.xsd"> 
     <movie id="76215">
         <name>El conjuro 2</name>
         <sinopsis>Lorraine y Ed Warren, quienes,  en una de sus más aterradoras 
