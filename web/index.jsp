@@ -17,6 +17,5 @@
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
-
     </body>
 </html>
