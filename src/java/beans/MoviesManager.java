@@ -30,6 +30,9 @@ public class MoviesManager {
     private Document xmlDocument;
     private XPath xPath;
 
+    public MoviesManager() {
+    }
+
     public MoviesManager(String xmlFile) {
         this.xmlFile = xmlFile;
         loadFile();
@@ -56,7 +59,7 @@ public class MoviesManager {
             ArrayList<Movie> movies = new ArrayList<>();
             String expression = "/billboard/movie";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-
+            
             for (int i = 0; i < nodeList.getLength(); i++) {
 
                 Node node = nodeList.item(i);

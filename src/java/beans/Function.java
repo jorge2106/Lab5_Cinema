@@ -1,6 +1,7 @@
 package beans;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -14,7 +15,7 @@ import java.util.Calendar;
  *
  * @author Jorge
  */
-public class Function {
+public class Function implements Serializable {
     
     private int movieId;
     private Calendar date;

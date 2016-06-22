@@ -26,6 +26,7 @@
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
         <%
             ArrayList movies = manager.getAllMovies();
+            System.out.println(movies.toString());
              movie = null;
             for (int i = 0; i < movies.size(); i++) {
                 movie = (Movie) movies.get(i);
