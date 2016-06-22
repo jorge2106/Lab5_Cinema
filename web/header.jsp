@@ -1,1 +1,1 @@
-<header>Cinema</header>
+<header>FilMax</header>

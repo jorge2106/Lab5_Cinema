@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/FunctionDTD.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE functions SYSTEM "FunctionDTD.dtd">
+
+    <functions>
+    ...
+    </functions>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT functions (function)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT function (date|hour|rowCant|columnCant|seats)*>
+<!ATTLIST function
+    movieId CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT date (day|month|year)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT day (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT month (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT year (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hour (hours|min)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hours (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT min (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rowCant (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT columnCant (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT seats (seat)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT seat (state)*>
+<!ATTLIST seat
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT state (#PCDATA)>

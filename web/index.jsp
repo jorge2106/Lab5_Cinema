@@ -11,11 +11,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" type="image/png" href="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" />
         <link rel="stylesheet" href="generalStyle.css">
-        <title>Cinema</title>
+        <title>FilMax</title>
     </head>
     <body>
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
     </body>
 </html>

@@ -10,10 +10,11 @@ and open the template in the editor.
 
 body {
     color: black;
+     background-image: url("img/WP6L2MV5.jpg");
 }
 
 header {
-    background: black;
+    background: transparent;
     color: white;
     font-style: initial;
     font-weight: bold;
@@ -24,11 +25,11 @@ header {
 
 div {
     line-height:30px;
-    background-color:aquamarine;
+    background-color:transparent;
     height:20px;
     width:1330px;
     font-family: serif;
-    font-size: 10px;
+    font-size: 30px;
     padding:5px;
     margin: 5px;
 }
@@ -45,6 +46,8 @@ img {
     float: left;
     width:181px;
     height:140px;
+    padding:5px;
+    margin: 5px;
 }
 
 
