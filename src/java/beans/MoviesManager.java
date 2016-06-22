@@ -1,3 +1,5 @@
+package beans;
+
 
 
 import java.io.File;
@@ -49,9 +51,9 @@ public class MoviesManager {
         }
     }
 
-    public List<Movie> getAllMovies() {
+    public ArrayList<Movie> getAllMovies() {
         try {
-            List<Movie> movies = new ArrayList<>();
+            ArrayList<Movie> movies = new ArrayList<>();
             String expression = "/billboard/movie";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 

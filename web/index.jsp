@@ -4,6 +4,10 @@
     Author     : Jorge
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="beans.MoviesManager"%>
+<%@page import="beans.Movie"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,10 +21,27 @@
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
+        
+        <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
+        <jsp:useBean id="movie" scope="session" class="beans.Movie" />
+        <%
+            ArrayList movies = manager.getAllMovies();
+             movie = null;
+            for (int i = 0; i < movies.size(); i++) {
+                movie = (Movie) movies.get(i);
+                String name = movie.getName();
+                String sinopsis = movie.getSinopsis();
+                String urlImage = movie.getUrlImage();
+                String urlVideo = movie.getUrlVideo();
+        %>
         <ul>
-            <li>Coffee</li>
+            <li><a href=""><%=name%></a></li>
             <li>Tea</li>
             <li>Milk</li>
         </ul>
+
+        <%
+            }
+        %>
     </body>
 </html>

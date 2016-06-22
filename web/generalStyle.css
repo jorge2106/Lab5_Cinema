@@ -34,9 +34,9 @@ div {
     margin: 5px;
 }
 
-section {
-    color: black;
-    background: chartreuse;
+ul {
+    color: white;
+    background: transparent;
     padding: 5px;
     margin: 3px;
     margin-left: 100px;

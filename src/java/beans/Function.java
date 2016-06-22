@@ -1,4 +1,7 @@
+package beans;
 
+
+import java.util.ArrayList;
 import java.util.Calendar;
 
 /*
@@ -18,6 +21,7 @@ public class Function {
     private Calendar hour;
     private int colums;
     private int rows;
+    private ArrayList<Integer> seats = new ArrayList<>();
 
     public Function() {
     }
