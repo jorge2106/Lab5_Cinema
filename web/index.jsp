@@ -32,10 +32,10 @@
                 String name = movie.getName();
                 String sinopsis = movie.getSinopsis();
                 String urlImage = movie.getUrlImage();
-                String urlVideo = movie.getUrlVideo();
         %>
         <ul>
-            <li><a href=""><%=name%></a></li>
+            <li><a href=""><img src=<%=urlImage%> alt="Cinema"><%=name%></a></li>
+            <p><%=sinopsis%></p>
         </ul>
 
         <%

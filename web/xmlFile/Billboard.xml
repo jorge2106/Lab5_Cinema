@@ -58,18 +58,6 @@ and open the template in the editor.
         <urlImage>img/Deadpool_poster.jpg</urlImage>
         <urlVideo>https://www.youtube.com/watch?v=k4iHpy1z1fg</urlVideo>
     </movie>
-    <movie id="76215">
-        <name>Money Monster: El maestro del Dinero</name>
-        <sinopsis>En este tenso thriller, Lee Gates (Clooney) es un pomposo presentador 
-            de TV cuyo popular programa sobre finanzas lo convirtió en el gurú de Wall Street.
-            Pero luego de pregonar acciones de una compañía de tecnología que misteriosamente
-            cae, un inversor furioso (O´Connell) toma como rehenes a Gate, a su equipo y a 
-            su productora Patty Fenn (Roberts) en vivo durante la transmisión del show. 
-            De a poco y en tiempo real, Gates y Fenn deben encontrar la forma de mantenerse 
-            vivos y simultáneamente descubrir la verdad detrás de una maraña de mentiras millonarias.</sinopsis>
-        <urlImage>img/Money monster.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=qr_nGAbFkmk</urlVideo>
-    </movie>
     <movie id="11233">
         <name>Las Tortugas Ninja 2</name>
         <sinopsis>Miguel Ángel, Donatelo, Leonardo y Rafael regresan a los cines 
