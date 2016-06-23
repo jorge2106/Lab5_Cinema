@@ -27,7 +27,6 @@
         <%
             ArrayList movies = manager.getAllMovies();
             System.out.println(movies.toString());
-             movie = null;
             for (int i = 0; i < movies.size(); i++) {
                 movie = (Movie) movies.get(i);
                 String name = movie.getName();
@@ -37,8 +36,6 @@
         %>
         <ul>
             <li><a href=""><%=name%></a></li>
-            <li>Tea</li>
-            <li>Milk</li>
         </ul>
 
         <%

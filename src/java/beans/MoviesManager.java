@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -23,7 +22,7 @@ import org.xml.sax.SAXException;
 
 public class MoviesManager {
 
-    private String xmlFile;
+    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
@@ -31,10 +30,6 @@ public class MoviesManager {
     private XPath xPath;
 
     public MoviesManager() {
-    }
-
-    public MoviesManager(String xmlFile) {
-        this.xmlFile = xmlFile;
         loadFile();
     }
 
@@ -72,11 +67,10 @@ public class MoviesManager {
                             .item(0).getChildNodes().item(0).getNodeValue();
                     String sinopsis = element.getElementsByTagName("sinopsis")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlImage = element.getElementsByTagName("age")
+                    String urlImage = element.getElementsByTagName("urlImage")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlVideo = element
-                            .getElementsByTagName("salary").item(0)
-                            .getChildNodes().item(0).getNodeValue();
+                    String urlVideo = element.getElementsByTagName("urlVideo")
+                            .item(0).getChildNodes().item(0).getNodeValue();
                     movies.add(new Movie(id, name, sinopsis, urlImage, urlVideo));
                 }
             }

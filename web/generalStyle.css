@@ -10,7 +10,7 @@ and open the template in the editor.
 
 body {
     color: black;
-     background-image: url("img/WP6L2MV5.jpg");
+    background-image: url("img/WP6L2MV5.jpg");
 }
 
 header {
@@ -40,6 +40,11 @@ ul {
     padding: 5px;
     margin: 3px;
     margin-left: 100px;
+}
+
+li {
+    color: white;
+    margin: 20px; 
 }
 
 p {
