@@ -20,16 +20,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class NextReleasesManager {
+public class MoviesManager {
 
-    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\NextReleases.xml";
+    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
     private Document xmlDocument;
     private XPath xPath;
 
-    public NextReleasesManager() {
+    public MoviesManager() {
         loadFile();
     }
 
@@ -49,10 +49,43 @@ public class NextReleasesManager {
         }
     }
 
-    public ArrayList<Movie> getAllMovies() {
+    public ArrayList<Movie> getAllBillboardMovies() {
         try {
             ArrayList<Movie> movies = new ArrayList<>();
-            String expression = "/nextReleases/movie";
+            String expression = "/movies/movie[state='Cartelera']";
+            NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+            
+            for (int i = 0; i < nodeList.getLength(); i++) {
+
+                Node node = nodeList.item(i);
+
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element element = (Element) node;
+                    int id = Integer.parseInt(node.getAttributes().getNamedItem("id").getNodeValue());
+                    String name = element.getElementsByTagName("name")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String sinopsis = element.getElementsByTagName("sinopsis")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String urlImage = element.getElementsByTagName("urlImage")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String urlVideo = element.getElementsByTagName("urlVideo")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+                    movies.add(new Movie(id, name, sinopsis, urlImage, urlVideo));
+                }
+            }
+            return movies;
+
+        } catch (XPathExpressionException ex) {
+            System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        }
+        return null;
+    }
+    
+     public ArrayList<Movie> getAllNextReleasesMovies() {
+        try {
+            ArrayList<Movie> movies = new ArrayList<>();
+            String expression = "/movies/movie[state='Próximos Estrenos']";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
             
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -85,7 +118,7 @@ public class NextReleasesManager {
     public Movie getMovieById(int id) {
         try {
             Movie movie = null;
-            String expression = String.format("/nextReleases/movie[@id='%s']", id);
+            String expression = String.format("/billboard/movie[@id='%s']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 

@@ -18,11 +18,6 @@
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
         
-        <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
-        <jsp:useBean id="movie" scope="session" class="beans.Movie" />
-        
-        <%=session.getAttribute("id")%>
-        
         <h1>Seleccione la fecha y hora</h1>
         <form action="">
             <label><strong>Fecha: </strong><br/><br/></label>

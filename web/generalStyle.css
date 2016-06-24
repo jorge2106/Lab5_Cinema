@@ -21,7 +21,6 @@ header {
     font-family: fantasy;
     padding: 25px;
     font-size: 70px;
-    margin-bottom: 80px;
 }
 
 div {
@@ -33,13 +32,6 @@ div {
     font-size: 30px;
     padding:5px;
     margin: 5px;
-}
-
-section {
-    color: white;
-    background: transparent;
-    padding: 5px;
-    margin: 10px;
 }
 
 a:link, a:visited {
@@ -71,6 +63,15 @@ img {
     height:140px;
     padding:5px;
     margin: 5px;
+}
+
+tr {
+    color: white;
+    font-size: 40px;
+}
+
+table {
+    margin: 40px;
 }
 
 

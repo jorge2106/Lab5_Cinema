@@ -1,7 +1,7 @@
 
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="beans.BillboardMoviesManager"%>
+<%@page import="beans.MoviesManager"%>
 <%@page import="beans.Movie"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,11 +17,10 @@
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
 
-        <jsp:useBean id="manager" scope="session" class="beans.BillboardMoviesManager" />
+        <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
         <%
-            ArrayList movies = manager.getAllMovies();
-            System.out.println(movies.toString());
+            ArrayList movies = manager.getAllBillboardMovies();
             for (int i = 0; i < movies.size(); i++) {
                 movie = (Movie) movies.get(i);
                 String name = movie.getName();
@@ -29,13 +28,16 @@
                 String sinopsis = movie.getSinopsis();
                 String urlImage = movie.getUrlImage();
         %>
-        <section>
-            <li><a href="" id="<%=movieId%>">
-                    <img src=<%=urlImage%> alt="FilMax" style="width:270px;height:240px;border:0">
-                    <%=name%>
-                </a></li>
-            <p><%=sinopsis%></p>
-        </section><br><br><br>
+        <table>
+            <tr>
+                <td>
+                    <a href="movieController.jsp?idMovie=<%=movieId%>">
+                        <%=name%>
+                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+                    </a>
+                </td>
+            </tr>
+        </table>
         <%
             }
         %>
