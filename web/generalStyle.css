@@ -17,10 +17,11 @@ header {
     background: transparent;
     color: white;
     font-style: initial;
-    font-weight: bold;
-    font-family: serif;
+    font-weight: 900;
+    font-family: fantasy;
     padding: 25px;
     font-size: 70px;
+    margin-bottom: 80px;
 }
 
 div {
@@ -34,26 +35,23 @@ div {
     margin: 5px;
 }
 
-ul {
+section {
     color: white;
     background: transparent;
     padding: 5px;
-    margin: 3px;
+    margin: 10px;
 }
 
-a:link {
-    color: red;
-}
-
-a:visited {
-    color: green;
+a:link, a:visited {
+    background-color: cadetblue;
+    color: white;
+    padding: 9px 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
 a:hover {
-    color: hotpink;
-}
-
-a:active {
     color: blue;
 }
 

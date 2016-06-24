@@ -20,16 +20,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class MoviesManager {
+public class NextReleasesManager {
 
-    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
+    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\NextReleases.xml";
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
     private Document xmlDocument;
     private XPath xPath;
 
-    public MoviesManager() {
+    public NextReleasesManager() {
         loadFile();
     }
 
@@ -52,7 +52,7 @@ public class MoviesManager {
     public ArrayList<Movie> getAllMovies() {
         try {
             ArrayList<Movie> movies = new ArrayList<>();
-            String expression = "/billboard/movie";
+            String expression = "/nextReleases/movie";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
             
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -85,7 +85,7 @@ public class MoviesManager {
     public Movie getMovieById(int id) {
         try {
             Movie movie = null;
-            String expression = String.format("/billboard/movie[@id='%s']", id);
+            String expression = String.format("/nextReleases/movie[@id='%s']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 

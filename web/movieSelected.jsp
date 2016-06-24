@@ -17,13 +17,19 @@
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
+        
+        <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
+        <jsp:useBean id="movie" scope="session" class="beans.Movie" />
+        
+        <%=session.getAttribute("id")%>
+        
         <h1>Seleccione la fecha y hora</h1>
         <form action="">
-            <label><strong>Fecha: </strong></label>
+            <label><strong>Fecha: </strong><br/><br/></label>
             <input type="checkbox" name="date1" value="24/6/2016"/><br/><br/>
             <input type="checkbox" name="date2" value="25/6/2016"/><br/><br/>
             <input type="checkbox" name="date3" value="26/6/2016"/><br/><br/>
-           <label><strong>Horario: </strong></label>
+           <label><strong>Horario: </strong><br/><br/></label>
            <input type="checkbox" name="time1" value="4:00 pm"/><br/><br/>
            <input type="checkbox" name="time2" value="6:00 pm"/><br/><br/>
            <input type="checkbox" name="time3" value="8:00 pm"/><br/><br/>
