@@ -29,7 +29,6 @@
                     String sinopsis = movie.getSinopsis();
                     String urlImage = movie.getUrlImage();
             %>
-            <table>
                 <tr>
                     <td>
                         <a href="movieController.jsp?idMovie=<%=movieId%>">
