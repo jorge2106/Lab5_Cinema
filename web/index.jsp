@@ -19,8 +19,10 @@
 
         <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
+    <center>
         <table>
             <%
+                getServletContext().getRealPath("xmlFile/Billboard.xml");
                 ArrayList movies = manager.getAllBillboardMovies();
                 for (int i = 0; i < movies.size(); i++) {
                     movie = (Movie) movies.get(i);
@@ -29,24 +31,22 @@
                     String sinopsis = movie.getSinopsis();
                     String urlImage = movie.getUrlImage();
             %>
-            <table>
-                <tr>
-                    <td>
-                        <a href="movieController.jsp?idMovie=<%=movieId%>">
-                            <%=name%>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="movieController.jsp?idMovie=<%=movieId%>">
-                            <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
-                        </a>
-                    </td>
-                </tr>
-                <%
-                    }
-                %>
-            </table>
-    </body>
+            <tr>
+                <td>
+                    <a href="movieController.jsp?option=<%=movieId%>"><%=name%></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="movieController.jsp?option=<%=movieId%>">
+                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+                    </a>
+                </td>
+            </tr>
+            <%
+                }
+            %>
+        </table>
+    </center>
+</body>
 </html>

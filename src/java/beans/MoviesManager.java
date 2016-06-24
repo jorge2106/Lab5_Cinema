@@ -22,7 +22,7 @@ import org.xml.sax.SAXException;
 
 public class MoviesManager {
 
-    private String xmlFile = "C:\\Users\\Justin\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
+    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
@@ -115,10 +115,10 @@ public class MoviesManager {
         return null;
     }
 
-    public Movie getMovieById(int id) {
+    public Movie getBillboardById(int id) {
         try {
-            Movie movie = null;
-            String expression = String.format("/billboard/movie[@id='%s']", id);
+            Movie movie = new Movie();
+            String expression = String.format("/movies/movie[@id='%s']", id);
 
             Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
 
@@ -131,11 +131,10 @@ public class MoviesManager {
                             .item(0).getChildNodes().item(0).getNodeValue();
                     String sinopsis = element.getElementsByTagName("sinopsis")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlImage = element.getElementsByTagName("age")
+                    String urlImage = element.getElementsByTagName("urlImage")
                             .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlVideo = element
-                            .getElementsByTagName("salary").item(0)
-                            .getChildNodes().item(0).getNodeValue();
+                    String urlVideo = element.getElementsByTagName("urlVideo")
+                            .item(0).getChildNodes().item(0).getNodeValue();
 
                     movie = new Movie(id, name, sinopsis, urlImage, urlVideo);
                 }

@@ -15,7 +15,7 @@ and open the template in the editor.
             a una madre soltera con cuatro hijos que vive en una casa repleta de espíritus 
             malignos.</sinopsis>
         <urlImage>img/El_Conjuro.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=fFS929KKVAQ</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/fFS929KKVAQ</urlVideo>
         <state>Cartelera</state>
     </movie>
     <movie id="3242">
@@ -33,7 +33,7 @@ and open the template in the editor.
             sorpresiva decisión de Tony Stark de apoyar la supervisión y rendición
             de cuentas al gobierno.</sinopsis>
         <urlImage>img/Civil_War.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=s5PVmDAEuro</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/s5PVmDAEuro</urlVideo>
         <state>Cartelera</state>
     </movie>
     <movie id="41235">
@@ -45,7 +45,7 @@ and open the template in the editor.
             la extinción. Dos héroes, uno de cada bando, están a punto de chocar
             en un enfrentamiento que cambiará el destino de sus familias y pueblos.</sinopsis>
         <urlImage>img/Warcraft_Teaser_Poster.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=RhFMIRuHAL4</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/RhFMIRuHAL4</urlVideo>
         <state>Cartelera</state>
     </movie>
     <movie id="74112">
@@ -59,7 +59,7 @@ and open the template in the editor.
             caza al hombre que casi destruyó su vida. “NO ES UNA PELICULA PARA MENORES
             DE 15 AÑOS. CONTIENE VIOLENCIA EXPLICITA”</sinopsis>
         <urlImage>img/Deadpool_poster.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=k4iHpy1z1fg</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/k4iHpy1z1fg</urlVideo>
         <state>Cartelera</state>
     </movie>
     <movie id="11233">
@@ -76,7 +76,7 @@ and open the template in the editor.
             Shredder y a su nuevo equipo, se encuentran frente a un mal aún mayor, 
             con intenciones similares: el notorio Krang</sinopsis>
         <urlImage>img/Tortugas.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=K5KQrkB0g3o</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/K5KQrkB0g3o</urlVideo>
         <state>Cartelera</state>
     </movie>
     <movie id="16537">
@@ -91,7 +91,7 @@ and open the template in the editor.
             Sólo el ingenio de unos cuantos hombres y mujeres valientes puede
             traer a nuestro mundo de regreso del borde de la extinción.</sinopsis>
         <urlImage>img/Dia_de_la_independencia.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=TbMdWwQbeG8</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/TbMdWwQbeG8</urlVideo>
         <state>Próximos Estrenos</state>
     </movie>
     <movie id="18927">
@@ -104,7 +104,7 @@ and open the template in the editor.
             y aventura, viajando a tierras exóticas nuevas y encontrando una
             colección de coloridos nuevos personajes.</sinopsis>
         <urlImage>img/Laeradehielo.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=FjQqW_W4Pug</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/FjQqW_W4Pug</urlVideo>
         <state>Próximos Estrenos</state>
     </movie>
     <movie id="82920">
@@ -119,7 +119,7 @@ and open the template in the editor.
             de este complot asesino no tienen idea de lo que están a punto de 
             desatar.</sinopsis>
         <urlImage>img/Tarzan.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=HwW1EkE9FnA</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/HwW1EkE9FnA</urlVideo>
         <state>Próximos Estrenos</state>
     </movie>
     <movie id="72120">
@@ -135,7 +135,7 @@ and open the template in the editor.
             un último truco sin precedentes para limpiar sus nombres y revelar
             la mente maestra detrás de todo.</sinopsis>
         <urlImage>img/s3leDCmmN94U5IK-360x540.jpg</urlImage>
-        <urlVideo>https://www.youtube.com/watch?v=qBZMzO5M6qY</urlVideo>
+        <urlVideo>https://www.youtube.com/embed/qBZMzO5M6qY</urlVideo>
         <state>Próximos Estrenos</state>
     </movie>
 </movies>

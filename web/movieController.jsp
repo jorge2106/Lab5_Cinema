@@ -5,10 +5,11 @@
 
 
 <%
-    String movieId = request.getParameter("movieId");
-    //movieActual = manager.getMovieById(Integer.parseInt(movieId));
-    
-    //response.sendRedirect("movieSelected.jsp");
+    String movieId = request.getParameter("option");
+    int id = Integer.parseInt(movieId);
+    movieActual = manager.getBillboardById(id);
+    session.setAttribute("movieActual", movieActual);
+    response.sendRedirect("movieSelected.jsp");
 %>
 
-<h1><%=movieId%></h1>
+
