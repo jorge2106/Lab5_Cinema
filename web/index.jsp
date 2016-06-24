@@ -19,16 +19,17 @@
 
         <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
-        <%
-            ArrayList movies = manager.getAllBillboardMovies();
-            for (int i = 0; i < movies.size(); i++) {
-                movie = (Movie) movies.get(i);
-                String name = movie.getName();
-                int movieId = movie.getId();
-                String sinopsis = movie.getSinopsis();
-                String urlImage = movie.getUrlImage();
-        %>
+
         <table>
+            <%
+                ArrayList movies = manager.getAllBillboardMovies();
+                for (int i = 0; i < movies.size(); i++) {
+                    movie = (Movie) movies.get(i);
+                    String name = movie.getName();
+                    String movieId = movie.getId() + "";
+                    String sinopsis = movie.getSinopsis();
+                    String urlImage = movie.getUrlImage();
+            %>
             <tr>
                 <td>
                     <a href="movieController.jsp?idMovie=<%=movieId%>">
@@ -37,9 +38,9 @@
                     </a>
                 </td>
             </tr>
+            <%
+                }
+            %>
         </table>
-        <%
-            }
-        %>
     </body>
 </html>

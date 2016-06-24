@@ -6,7 +6,9 @@
 
 <%
     String movieId = request.getParameter("movieId");
-    movieActual = manager.getMovieById(Integer.parseInt(movieId));
+    //movieActual = manager.getMovieById(Integer.parseInt(movieId));
     
-    response.sendRedirect("movieSelected.jsp");
+    //response.sendRedirect("movieSelected.jsp");
 %>
+
+<h1><%=movieId%></h1>
