@@ -10,7 +10,7 @@ and open the template in the editor.
 
 body {
     color: black;
-    background-image: url("img/WP6L2MV5.jpg");
+    background-image: url("img/wallpaper-simple-blue-computer-art-mexer.jpg");
 }
 
 header {
@@ -41,8 +41,20 @@ ul {
     margin: 3px;
 }
 
-a {
-     font-size: 30px;
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
 }
 
 li {
