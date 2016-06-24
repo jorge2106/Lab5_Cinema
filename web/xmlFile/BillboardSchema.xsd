@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="billboard">
+    <xs:element name="movies">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="movie"/>
@@ -40,6 +40,7 @@ and open the template in the editor.
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:sequence>
+                    <xs:element name="state"/>
                     <xs:attribute name="id">
                         <xs:simpleType>
                             <xs:restriccion base="xs:integer">
