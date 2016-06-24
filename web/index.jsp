@@ -28,7 +28,6 @@
                     movie = (Movie) movies.get(i);
                     String name = movie.getName();
                     int movieId = movie.getId();
-                    String sinopsis = movie.getSinopsis();
                     String urlImage = movie.getUrlImage();
             %>
             <tr>
