@@ -29,13 +29,16 @@
                 String sinopsis = movie.getSinopsis();
                 String urlImage = movie.getUrlImage();
         %>
-        <section>
-            <li><a href="" id="<%=movieId%>">
-                    <img src=<%=urlImage%> alt="FilMax" style="width:270px;height:240px;border:0">
-                    <%=name%>
-                </a></li>
-            <p><%=sinopsis%></p>
-        </section><br><br><br>
+        <table>
+            <tr>
+                <td>
+                    <a href="movieController.jsp?idMovie=<%=movieId%>">
+                        <%=name%>
+                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0; float:  bottom">
+                    </a>
+                </td>
+            </tr>
+        </table>
         <%
             }
         %>

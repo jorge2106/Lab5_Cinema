@@ -35,11 +35,11 @@
                 String urlImage = movieNext.getUrlImage();
         %>
         <section>
-            <li><a href="" id="<%=movieId%>">
+            <li><h2>
                     <img src=<%=urlImage%> alt="FilMax" style="width:270px;height:240px;border:0">
                     <%=name%>
-                </a></li>
-            <p><%=sinopsis%></p>
+                </h2>
+                </li>
         </section>
         <%
             }

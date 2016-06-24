@@ -18,12 +18,14 @@
         <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
+        <h3>Seleccione los  asientos</h3>
         <table style="width:100%">
             <tr>
                 <td> </td>
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
+                <td>4</td>
             </tr>
             <tr>
                 <td>A</td>
