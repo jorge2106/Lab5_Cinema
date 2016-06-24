@@ -63,5 +63,6 @@
                 <td><input type="checkbox" name="E4"/></td>
             </tr>
         </table>
+        <input type="submit" value="Continuar"/>
     </body>
 </html>

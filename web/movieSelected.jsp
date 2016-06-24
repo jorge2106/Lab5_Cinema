@@ -18,10 +18,6 @@
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
         
-        <%
-            String movieId = request.getParameter("movieId");
-        %>
-        
         <h1>Seleccione la fecha y hora</h1>
         <form action="">
             <label><strong>Fecha: </strong><br/><br/></label>

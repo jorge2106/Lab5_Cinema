@@ -5,7 +5,7 @@
 --%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="beans.NextReleasesManager"%>
+<%@page import="beans.MoviesManager"%>
 <%@page import="beans.Movie"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -22,10 +22,10 @@
         <%@include file="header.jsp" %>
         <%@include file="menu.jsp" %>
 
-        <jsp:useBean id="managerNext" scope="session" class="beans.NextReleasesManager" />
+        <jsp:useBean id="managerNext" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movieNext" scope="session" class="beans.Movie" />
         <%
-            ArrayList movies = managerNext.getAllMovies();
+            ArrayList movies = managerNext.getAllNextReleasesMovies();
             System.out.println(movies.toString());
             for (int i = 0; i < movies.size(); i++) {
                 movieNext = (Movie) movies.get(i);
@@ -34,13 +34,16 @@
                 String sinopsis = movieNext.getSinopsis();
                 String urlImage = movieNext.getUrlImage();
         %>
-        <section>
-            <li><h2>
-                    <img src=<%=urlImage%> alt="FilMax" style="width:270px;height:240px;border:0">
-                    <%=name%>
-                </h2>
-                </li>
-        </section>
+        <table>
+            <tr>
+                <td>
+                    <a href="">
+                        <%=name%>
+                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+                    </a>
+                </td>
+            </tr>
+        </table>
         <%
             }
         %>
