@@ -22,7 +22,7 @@ import org.xml.sax.SAXException;
 
 public class MoviesManager {
 
-    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
+    private String xmlFile = "C:\\Users\\Justin\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;

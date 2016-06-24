@@ -19,28 +19,34 @@
 
         <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
-
         <table>
             <%
                 ArrayList movies = manager.getAllBillboardMovies();
                 for (int i = 0; i < movies.size(); i++) {
                     movie = (Movie) movies.get(i);
                     String name = movie.getName();
-                    String movieId = movie.getId() + "";
+                    int movieId = movie.getId();
                     String sinopsis = movie.getSinopsis();
                     String urlImage = movie.getUrlImage();
             %>
-            <tr>
-                <td>
-                    <a href="movieController.jsp?idMovie=<%=movieId%>">
-                        <%=name%>
-                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
-                    </a>
-                </td>
-            </tr>
-            <%
-                }
-            %>
-        </table>
+            <table>
+                <tr>
+                    <td>
+                        <a href="movieController.jsp?idMovie=<%=movieId%>">
+                            <%=name%>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="movieController.jsp?idMovie=<%=movieId%>">
+                            <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+                        </a>
+                    </td>
+                </tr>
+                <%
+                    }
+                %>
+            </table>
     </body>
 </html>
