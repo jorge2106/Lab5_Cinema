@@ -10,6 +10,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -28,15 +30,16 @@ import org.xml.sax.SAXException;
  * @author Jorge
  */
 public class FunctionManager {
-    
-    private String xmlFile = "C:\\Users\\Jorge\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Function.xml";
+
+    private String xmlFile;
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
     private Document xmlDocument;
     private XPath xPath;
 
-    public FunctionManager() {
+    public FunctionManager(String xmlFile) {
+        this.xmlFile = xmlFile;
         loadFile();
     }
 
@@ -56,35 +59,57 @@ public class FunctionManager {
         }
     }
 
-    public Movie getFunctionById(int id) {
+    public ArrayList<Function> get(int id) {
         try {
-            Movie movie = new Movie();
-            String expression = String.format("/functions/funtion[@id='%s']", id);
+            ArrayList<Function> functions = new ArrayList<>();
+            String expression = String.format("/functions/function[@id='%s']", id);
+            NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
-            Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
+            for (int i = 0; i < nodeList.getLength(); i++) {
 
-            if (node != null) {
+                Node node = nodeList.item(i);
+
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
 
                     Element element = (Element) node;
 
-                    String name = element.getElementsByTagName("name")
-                            .item(0).getChildNodes().item(0).getNodeValue();
-                    String sinopsis = element.getElementsByTagName("sinopsis")
-                            .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlImage = element.getElementsByTagName("urlImage")
-                            .item(0).getChildNodes().item(0).getNodeValue();
-                    String urlVideo = element.getElementsByTagName("urlVideo")
-                            .item(0).getChildNodes().item(0).getNodeValue();
+                    int day = Integer.parseInt(element.getElementsByTagName("date").
+                            item(0).getChildNodes().item(0).getNodeValue());
+                    int month = Integer.parseInt(element.getElementsByTagName("date").
+                            item(0).getChildNodes().item(1).getNodeValue());
+                    int year = Integer.parseInt(element.getElementsByTagName("date").
+                            item(0).getChildNodes().item(2).getNodeValue());
+                    int hour = Integer.parseInt(element.getElementsByTagName("hour").
+                            item(0).getChildNodes().item(0).getNodeValue());
+                    int min = Integer.parseInt(element.getElementsByTagName("hour").
+                            item(0).getChildNodes().item(1).getNodeValue());
+                    int rowCant = Integer.parseInt(element.getElementsByTagName("rowCant").
+                            item(0).getChildNodes().item(0).getNodeValue());
+                    int columnCant = Integer.parseInt(element.getElementsByTagName("columnCant").
+                            item(0).getChildNodes().item(0).getNodeValue());
 
-                    movie = new Movie(id, name, sinopsis, urlImage, urlVideo);
+                    NodeList nodeListSeats = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+
+                    for (int j = 0; j < nodeList.getLength(); j++) {
+
+                        Node nodeSeat = nodeList.item(i);
+
+                        if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                            Element elementSeat = (Element) node;
+                            
+                        }
+                    }
+                    
+                    Calendar date = new GregorianCalendar(year, month, day, hour, min);
                 }
             }
-            return movie;
+            return functions;
+
         } catch (XPathExpressionException ex) {
             System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return null;
     }
-    
+
 }

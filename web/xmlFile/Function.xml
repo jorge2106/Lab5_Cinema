@@ -5,10 +5,10 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<!DOCTYPE career SYSTEM "FunctionDTD.dtd">
+<!DOCTYPE functions SYSTEM "FunctionDTD.dtd">
 
 <functions>
-    <function movieId="76215">
+    <function id="76215">
         <date>
             <day>11</day>
             <month>06</month>
@@ -16,7 +16,7 @@ and open the template in the editor.
         </date>
         <hour>
             <hours>3</hours>
-            <min>56</min>
+            <min>10</min>
         </hour>
         <rowCant>4</rowCant>
         <columnCant>5</columnCant>
@@ -86,7 +86,85 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function movieId="3242">
+     <function id="76215">
+        <date>
+            <day>12</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>1</hours>
+            <min>30</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+    <function id="3242">
         <date>
             <day>9</day>
             <month>06</month>
@@ -94,7 +172,7 @@ and open the template in the editor.
         </date>
         <hour>
             <hours>2</hours>
-            <min>48</min>
+            <min>40</min>
         </hour>
         <rowCant>4</rowCant>
         <columnCant>5</columnCant>
@@ -164,15 +242,93 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function movieId="41235">
+     <function id="3242">
         <date>
-            <day>19</day>
+            <day>9</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>2</hours>
+            <min>40</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+    <function id="41235">
+        <date>
+            <day>21</day>
             <month>06</month>
             <year>2016</year>
         </date>
         <hour>
             <hours>3</hours>
-            <min>01</min>
+            <min>00</min>
         </hour>
         <rowCant>4</rowCant>
         <columnCant>5</columnCant>
@@ -242,7 +398,163 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function movieId="74112">
+    <function id="41235">
+        <date>
+            <day>21</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>3</hours>
+            <min>00</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+    <function id="74112">
+        <date>
+            <day>17</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>8</hours>
+            <min>30</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+     <function id="74112">
         <date>
             <day>31</day>
             <month>06</month>
@@ -320,14 +632,14 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function movieId="76215">
+    <function id="76215">
         <date>
-            <day>12</day>
+            <day>14</day>
             <month>06</month>
             <year>2016</year>
         </date>
         <hour>
-            <hours>3</hours>
+            <hours>6</hours>
             <min>15</min>
         </hour>
         <rowCant>4</rowCant>
@@ -398,7 +710,85 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function movieId="11233">
+        <function id="76215">
+        <date>
+            <day>19</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>9</hours>
+            <min>50</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+    <function id="11233">
         <date>
             <day>21</day>
             <month>06</month>
@@ -406,6 +796,84 @@ and open the template in the editor.
         </date>
         <hour>
             <hours>4</hours>
+            <min>00</min>
+        </hour>
+        <rowCant>4</rowCant>
+        <columnCant>5</columnCant>
+        <seats>
+            <seat id="A1">
+                <state>0</state>
+            </seat>
+            <seat id="A2">
+                <state>0</state>
+            </seat>
+            <seat id="A3">
+                <state>0</state>
+            </seat>
+            <seat id="A4">
+                <state>0</state>
+            </seat>
+            <seat id="B1">
+                <state>0</state>
+            </seat>
+            <seat id="B2">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B3">
+                <state>0</state>
+            </seat>
+            <seat id="B4">
+                <state>0</state>
+            </seat>
+            <seat id="C1">
+                <state>0</state>
+            </seat>
+            <seat id="C2">
+                <state>0</state>
+            </seat>
+            <seat id="C3">
+                <state>0</state>
+            </seat>
+            <seat id="C4">
+                <state>0</state>
+            </seat>
+            <seat id="D1">
+                <state>0</state>
+            </seat>
+            <seat id="D2">
+                <state>0</state>
+            </seat>
+            <seat id="D3">
+                <state>0</state>
+            </seat>
+            <seat id="D4">
+                <state>0</state>
+            </seat>
+            <seat id="E1">
+                <state>0</state>
+            </seat>
+            <seat id="E2">
+                <state>0</state>
+            </seat>
+            <seat id="E3">
+                <state>0</state>
+            </seat>
+            <seat id="E4">
+                <state>0</state>
+            </seat>
+        </seats>
+    </function>
+    <function id="11233">
+        <date>
+            <day>25</day>
+            <month>06</month>
+            <year>2016</year>
+        </date>
+        <hour>
+            <hours>8</hours>
             <min>00</min>
         </hour>
         <rowCant>4</rowCant>
