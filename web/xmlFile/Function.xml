@@ -5,10 +5,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<!DOCTYPE functions SYSTEM "FunctionDTD.dtd">
-
 <functions>
-    <function id="76215">
+    <function idM="76215">
         <date>
             <day>11</day>
             <month>06</month>
@@ -86,7 +84,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="76215">
+    <function idM="76215">
         <date>
             <day>12</day>
             <month>06</month>
@@ -164,7 +162,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="3242">
+    <function idM="3242">
         <date>
             <day>9</day>
             <month>06</month>
@@ -242,7 +240,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="3242">
+    <function idM="3242">
         <date>
             <day>9</day>
             <month>06</month>
@@ -320,7 +318,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="41235">
+    <function idM="41235">
         <date>
             <day>21</day>
             <month>06</month>
@@ -398,7 +396,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="41235">
+    <function idM="41235">
         <date>
             <day>21</day>
             <month>06</month>
@@ -476,7 +474,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="74112">
+    <function idM="74112">
         <date>
             <day>17</day>
             <month>06</month>
@@ -554,7 +552,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="74112">
+    <function idM="74112">
         <date>
             <day>31</day>
             <month>06</month>
@@ -632,7 +630,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="76215">
+    <function idM="76215">
         <date>
             <day>14</day>
             <month>06</month>
@@ -710,7 +708,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="76215">
+    <function idM="76215">
         <date>
             <day>19</day>
             <month>06</month>
@@ -788,7 +786,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="11233">
+    <function idM="11233">
         <date>
             <day>21</day>
             <month>06</month>
@@ -866,7 +864,7 @@ and open the template in the editor.
             </seat>
         </seats>
     </function>
-    <function id="11233">
+    <function idM="11233">
         <date>
             <day>25</day>
             <month>06</month>

@@ -25,7 +25,7 @@
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT function (date|hour|rowCant|columnCant|seats)*>
 <!ATTLIST function
-    movieId CDATA #IMPLIED
+    idM CDATA #IMPLIED
   >
 
 <!--- Put your DTDDoc comment here. -->

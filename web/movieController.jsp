@@ -11,15 +11,15 @@
 <%
     MoviesManager manager = new MoviesManager(getServletContext().getRealPath("xmlFile/Billboard.xml"));
     FunctionManager managerFunct = new FunctionManager(getServletContext().getRealPath("xmlFile/Function.xml"));
-    
+
     String movieId = request.getParameter("option");
     int id = Integer.parseInt(movieId);
-
+    
     ArrayList<Function> functions = managerFunct.get(id);
-        
+
     movieActual = manager.getBillboardById(id);
     session.setAttribute("movieActual", movieActual);
-    
+
     response.sendRedirect("movieSelected.jsp");
 %>
 

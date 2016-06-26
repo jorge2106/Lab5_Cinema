@@ -63,7 +63,7 @@ public class FunctionManager {
     public ArrayList<Function> get(int id) {
         try {
             ArrayList<Function> functions = new ArrayList<>();
-            String expression = String.format("/functions/function[@id='%s']", id);
+            String expression = String.format("/functions/function[@idM='%s']", id);
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -119,7 +119,6 @@ public class FunctionManager {
                 String idS = nodeSeat.getAttributes().getNamedItem("id").getNodeValue();
                 int state = Integer.parseInt(elementSeat.getElementsByTagName("state").
                         item(0).getChildNodes().item(0).getNodeValue());
-
                 seats.put(idS, state);
             }
         }
