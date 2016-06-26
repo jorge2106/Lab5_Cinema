@@ -6,6 +6,11 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="beans.Movie"%>
+<%@page import="beans.Function"%>
+
+<jsp:useBean id="function1" scope="session" type="beans.Function" />
+<jsp:useBean id="function2" scope="session" type="beans.Function" />
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -36,14 +41,9 @@
         </div>
         <h1>Seleccione la fecha y hora</h1>
         <form action="">
-            <label><strong>Fecha: </strong><br/><br/></label>
-            <input type="radio" name="date" value="24/6/2016"/><br/><br/>
-            <input type="radio" name="date" value="25/6/2016"/><br/><br/>
-            <input type="radio" name="date" value="26/6/2016"/><br/><br/>
-            <label><strong>Horario: </strong><br/><br/></label>
-            <input type="radio" name="time" value="4:00 pm"/><br/><br/>
-            <input type="radio" name="time" value="6:00 pm"/><br/><br/>
-            <input type="radio" name="time" value="8:00 pm"/><br/><br/>
+            <label><strong>Horarios: </strong><br/><br/></label>
+            <input  type="radio" name="date"/><%%><jsp:getProperty name="function1" property="dateHour"/><br/><br/>
+            <input type="radio" name="date"/><jsp:getProperty name="function2" property="dateHour"/><br/><br/>
         </form> 
     </body>
 </html>

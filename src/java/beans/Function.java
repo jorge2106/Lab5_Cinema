@@ -1,6 +1,7 @@
 package beans;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.TreeMap;
 
@@ -64,8 +65,9 @@ public class Function implements Serializable {
         this.rows = rows;
     }
 
-    public Calendar getDateHour() {
-        return dateHour;
+    public String getDateHour() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yy - hh:mm");
+        return dateFormat.format(dateHour.getTime());
     }
 
     public void setDateHour(Calendar dateHour) {

@@ -1,7 +1,5 @@
 package beans;
 
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -55,7 +53,7 @@ public class MoviesManager {
             ArrayList<Movie> movies = new ArrayList<>();
             String expression = "/movies/movie[state='Cartelera']";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-            
+
             for (int i = 0; i < nodeList.getLength(); i++) {
 
                 Node node = nodeList.item(i);
@@ -82,13 +80,13 @@ public class MoviesManager {
         }
         return null;
     }
-    
-     public ArrayList<Movie> getAllNextReleasesMovies() {
+
+    public ArrayList<Movie> getAllNextReleasesMovies() {
         try {
             ArrayList<Movie> movies = new ArrayList<>();
             String expression = "/movies/movie[state='Próximos Estrenos']";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-            
+
             for (int i = 0; i < nodeList.getLength(); i++) {
 
                 Node node = nodeList.item(i);
@@ -140,6 +138,30 @@ public class MoviesManager {
                 }
             }
             return movie;
+        } catch (XPathExpressionException ex) {
+            System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        }
+        return null;
+    }
+
+    public String getMovieState(int id) {
+        try {
+            String state = "";
+            String expression = String.format("/movies/movie[@id='%s']", id);
+
+            Node node = (Node) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODE);
+
+            if (node != null) {
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element element = (Element) node;
+
+                    state = element.getElementsByTagName("state")
+                            .item(0).getChildNodes().item(0).getNodeValue();
+
+                }
+            }
+            return state;
         } catch (XPathExpressionException ex) {
             System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
