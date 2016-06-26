@@ -19,50 +19,19 @@
             <%@include file="header.jsp" %>
             <%@include file="menu.jsp" %>
         </header>
-        <h3>Seleccione los  asientos</h3>
+        <h3>Seleccione los asientos</h3>
+        <% String columns = "ABCDE"; %>
         <table style="width:100%">
+
+            <% for (int i = 1; i <= 4; i++) { %>
             <tr>
-                <td> </td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
+                <% for (int j = 0; j < columns.length(); j++) { %>
+                <td>
+                    <input type="submit" value="<%= "" + columns.charAt(j) + i%>"/>
+                </td>
+                <% } %>
             </tr>
-            <tr>
-                <td>A</td>
-                <td><input type="checkbox" name="A1"/></td>
-                <td><input type="checkbox" name="A2"/></td>
-                <td><input type="checkbox" name="A3"/></td>
-                <td><input type="checkbox" name="A4"/></td>
-            </tr>
-            <tr>
-                <td>B</td>
-                <td><input type="checkbox" name="B1"/></td>
-                <td><input type="checkbox" name="B2"/></td>
-                <td><input type="checkbox" name="B3"/></td>
-                <td><input type="checkbox" name="B4"/></td>
-            </tr>
-            <tr>
-                <td>C</td>
-                <td><input type="checkbox" name="C1"/></td>
-                <td><input type="checkbox" name="C2"/></td>
-                <td><input type="checkbox" name="C3"/></td>
-                <td><input type="checkbox" name="C4"/></td>
-            </tr>
-            <tr>
-                <td>D</td>
-                <td><input type="checkbox" name="D1"/></td>
-                <td><input type="checkbox" name="D2"/></td>
-                <td><input type="checkbox" name="D3"/></td>
-                <td><input type="checkbox" name="D4"/></td>
-            </tr>
-            <tr>
-                <td>E</td>
-                <td><input type="checkbox" name="E1"/></td>
-                <td><input type="checkbox" name="E2"/></td>
-                <td><input type="checkbox" name="E3"/></td>
-                <td><input type="checkbox" name="E4"/></td>
-            </tr>
+            <% }%>
         </table>
         <input type="submit" value="Continuar"/>
     </body>
