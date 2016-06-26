@@ -84,7 +84,6 @@ img {
 p {
     color: white;
     font-size: 30px;
-    
 }
 
 section div {
@@ -104,5 +103,17 @@ header div t {
 
 h2 {
     text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
+h3 {
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+
+movie div {
+    margin: auto;
+    padding: 0px 29%;
+}
