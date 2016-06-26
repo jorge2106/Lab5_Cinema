@@ -1,9 +1,3 @@
-<%-- 
-    Document   : seatsSelecction
-    Created on : 23/06/2016, 10:46:34 PM
-    Author     : Justin
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

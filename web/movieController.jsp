@@ -4,7 +4,8 @@
 <%@page import="beans.FunctionManager"%>
 <%@page import="beans.MoviesManager"%>
 <jsp:useBean id="movieActual" scope="session" class="beans.Movie" />
-<jsp:useBean id="function" scope="session" class="beans.Function" />
+<jsp:useBean id="function1" scope="session" class="beans.Function" />
+<jsp:useBean id="function2" scope="session" class="beans.Function" />
 
 
 
@@ -14,8 +15,13 @@
 
     String movieId = request.getParameter("option");
     int id = Integer.parseInt(movieId);
-    
+
     ArrayList<Function> functions = managerFunct.get(id);
+    function1 = functions.get(0);
+    function2 = functions.get(1);
+    
+    session.setAttribute("function1", function1);
+    session.setAttribute("function2", function2);
 
     movieActual = manager.getBillboardById(id);
     session.setAttribute("movieActual", movieActual);
