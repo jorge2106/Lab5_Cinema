@@ -52,7 +52,7 @@
         <form action="">
             <label><strong>Horarios: </strong><br/><br/></label>
             <a href="functionController.jsp?option=<%="function1"%>"><jsp:getProperty name="function1" property="dateHour"/></a><br/><br/>
-            <a href="functionControllerw.jsp?option=<%="function1"%>"><jsp:getProperty name="function1" property="dateHour"/></a><br/><br/>
+            <a href="functionController.jsp?option=<%="function1"%>"><jsp:getProperty name="function1" property="dateHour"/></a><br/><br/>
         </form> 
         <%
             }
