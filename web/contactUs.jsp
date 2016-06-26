@@ -14,9 +14,10 @@
         <title>FilMax</title>
     </head>
     <body>
-        <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
-        <%@include file="header.jsp" %>
-        <%@include file="menu.jsp" %>
+        <header>
+            <%@include file="header.jsp" %>
+            <%@include file="menu.jsp" %>
+        </header>
         <p>Dirección: Naranjo, Alajuela, Costa Rica</p> <br>
         <p>Correo electrónico: filmax@movies.com</p> <br>
         <p>Telefonos: 2451-0101/ 2451-0202</p> <br>

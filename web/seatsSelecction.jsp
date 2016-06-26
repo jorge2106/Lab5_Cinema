@@ -9,9 +9,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
-        <%@include file="header.jsp" %>
-        <%@include file="menu.jsp" %>
+        <header>
+            <%@include file="header.jsp" %>
+            <%@include file="menu.jsp" %>
+        </header>
         <h3>Seleccione los  asientos</h3>
         <table style="width:100%">
             <tr>

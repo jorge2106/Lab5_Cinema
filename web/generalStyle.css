@@ -19,19 +19,51 @@ header {
     font-style: initial;
     font-weight: 900;
     font-family: fantasy;
-    padding: 25px;
-    font-size: 70px;
+    padding: 15px;
+    font-size: 80px;
 }
 
-div {
-    line-height:30px;
-    background-color:transparent;
-    height:20px;
-    width:1330px;
+header div {
+    display: inline-block;
+}
+
+header nav {
+    background: #000;
+}
+
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+header div img {
+    width: 300px;
+    float: left;
+}
+
+a {
     font-family: serif;
     font-size: 30px;
-    padding:5px;
-    margin: 5px;
+}
+
+div a {
+    text-align: center;
 }
 
 a:link, a:visited {
@@ -43,35 +75,34 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: blue;
-}
-
-li {
-    color: white;
-    margin: 20px; 
+img {
+    width: 300px;
+    margin: auto;
+    display: block;
 }
 
 p {
     color: white;
     font-size: 30px;
+    
 }
 
-img {
+section div {
+    display: inline-block;
+    margin: 100px;
+}
+
+section div a img {
+    width: 400px;
+}
+
+header div t {
+    margin: 20px 0px;
+    padding: 35px 0px;
     float: left;
-    width:181px;
-    height:140px;
-    padding:5px;
-    margin: 5px;
 }
 
-tr {
-    color: white;
-    font-size: 40px;
+h2 {
+    text-align: center;
 }
-
-table {
-    margin: 40px;
-}
-
 

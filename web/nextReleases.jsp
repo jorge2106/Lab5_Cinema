@@ -16,13 +16,13 @@
         <title>FilMax</title>
     </head>
     <body>
-        <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
-        <%@include file="header.jsp" %>
-        <%@include file="menu.jsp" %>
+        <header>
+            <%@include file="header.jsp" %>
+            <%@include file="menu.jsp" %>
+        </header>
 
         <jsp:useBean id="movieNext" scope="session" class="beans.Movie" />
-    <center>        
-        <table>
+        <section>
             <%
                 MoviesManager managerNext = new MoviesManager(getServletContext().getRealPath("xmlFile/Billboard.xml"));
                 ArrayList movies = managerNext.getAllNextReleasesMovies();
@@ -34,24 +34,17 @@
                     String sinopsis = movieNext.getSinopsis();
                     String urlImage = movieNext.getUrlImage();
             %>
-            <tr>
-                <td>
-                    <a href="movieController.jsp?option=<%=movieId%>">
-                        <%=name%>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="movieController.jsp?option=<%=movieId%>">
-                        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
-                    </a>
-                </td>
-            </tr>
+            <div>
+                <h2>
+                    <a href="movieController.jsp?option=<%=movieId%>"><%=name%></a>
+                </h2>
+                <a href="movieController.jsp?option=<%=movieId%>">
+                    <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+                </a>
+            </div>
             <%
                 }
             %>
-        </table>
-    </center>
-</body>
+        </section>
+    </body>
 </html>
