@@ -10,7 +10,7 @@ and open the template in the editor.
 
 body {
     color: black;
-    background-image: url("img/wallpaper-simple-blue-computer-art-mexer.jpg");
+    background-image: url("img/WP6L2MV5.jpg");
 }
 
 header {
@@ -84,7 +84,6 @@ img {
 p {
     color: white;
     font-size: 30px;
-    
 }
 
 section div {
@@ -102,7 +101,29 @@ header div t {
     float: left;
 }
 
-h2 {
+label {
     text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+
+h4 {
+   color: white; 
+}
+
+movie div {
+    margin: auto;
+    padding: 0px 29%;
+}

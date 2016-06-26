@@ -4,12 +4,14 @@
     Author     : Jorge
 --%>
 
+<%@page import="beans.MoviesManager"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="beans.Movie"%>
 <%@page import="beans.Function"%>
 
 <jsp:useBean id="function1" scope="session" type="beans.Function" />
 <jsp:useBean id="function2" scope="session" type="beans.Function" />
+
 
 <!DOCTYPE html>
 <html>
@@ -33,17 +35,27 @@
             String urlImage = movieActual.getUrlImage();
             String urlVideo = movieActual.getUrlVideo();
         %>
+    <movie>
+        <h2><%=name%></h2>
+        <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
+        <h3>Sinopsis:</h3>
+        <p><%=sinopsis%></p>
         <div>
-            <h2><%=name%></h2>
-            <img src=<%=urlImage%> alt="FilMax" style="width:400px;height:370px;border:0">
-            <p>Sinopsis:&nbsp;<%=sinopsis%></p>
             <iframe width="600" height="300" src="<%=urlVideo%>" frameborder="0" allowfullscreen></iframe>
         </div>
-        <h1>Seleccione la fecha y hora</h1>
+
+        <%
+            MoviesManager manager = new MoviesManager(getServletContext().getRealPath("xmlFile/Billboard.xml"));
+            if (manager.getMovieState(movieActual.getId()).equals("Cartelera")) {
+        %>
+        <h2>Seleccione la fecha y hora</h2>
         <form action="">
             <label><strong>Horarios: </strong><br/><br/></label>
-            <input  type="radio" name="date"/><%%><jsp:getProperty name="function1" property="dateHour"/><br/><br/>
-            <input type="radio" name="date"/><jsp:getProperty name="function2" property="dateHour"/><br/><br/>
+            <a href="cantSeats.jsp"><jsp:getProperty name="function1" property="dateHour"/></a><br/><br/>
+            <a href="cantSeats.jsp"><jsp:getProperty name="function2" property="dateHour"/></a><br/><br/>
         </form> 
+        <%
+            }
+        %>
     </body>
 </html>

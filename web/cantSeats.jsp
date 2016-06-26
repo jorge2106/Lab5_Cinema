@@ -19,11 +19,13 @@
             <%@include file="menu.jsp" %>
         </header>
     <center>
-        <h1>Costo de las entradas<br> Niños: 2500<br> Adultos: 3500</h1>
-        <h1>Digite la cantidad de asientos que desea comprar</h1>
-        Asientos para niños&nbsp<input type="text" maxlength="2" size="1"/><br><br>
-        Asientos para adultos&nbsp<input type="text" maxlength="2" size="1"/><br><br>
-        <input type="submit" value="Continuar"/>
+        <h2>Costo de las entradas<br> Niños: 2500<br> Adultos: 3500</h2>
+        <h2>Digite la cantidad de asientos que desea comprar</h2>
+        <form method="get" action="seatsSelecction.jsp">
+            <h4>Asientos para niños&nbsp</h4><input type="text" maxlength="2" size="1" required/><br><br>
+            <h4>Asientos para adultos&nbsp</h4><input type="text" maxlength="2" size="1" required/><br><br>
+            <input type="submit" value="Continuar"/>
+        </form>
     </center>
-    </body>
+</body>
 </html>

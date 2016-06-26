@@ -16,6 +16,11 @@ import java.util.TreeMap;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
@@ -123,6 +128,42 @@ public class FunctionManager {
             }
         }
         return seats;
+    }
+
+    public boolean updateEmployeeNameById(int id, TreeMap<String, Integer> seats) {
+        try {
+            String expression = String.format("/functions/function[@id='%s']/seats", id);
+            NodeList nodeListSeats = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+
+            ArrayList<Integer> seatsValues = (ArrayList<Integer>)seats.values();
+            
+            for (int j = 0; j < nodeListSeats.getLength(); j++) {
+
+                Node nodeSeat = nodeListSeats.item(j);
+
+                if (nodeSeat.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element elementSeat = (Element) nodeSeat;
+                            
+                    elementSeat.getElementsByTagName("state").
+                            item(0).getChildNodes().item(0).setNodeValue(seatsValues.get(j) + "");
+
+                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+
+                    Transformer transformer = transformerFactory.newTransformer();
+                    DOMSource domSource = new DOMSource(xmlDocument);
+
+                    StreamResult streamResult = new StreamResult(new File(xmlFile));
+                    transformer.transform(domSource, streamResult);
+                }
+                return true;
+            }
+        } catch (XPathExpressionException ex) {
+            System.err.println("updatEemployeeNameById method, XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        } catch (TransformerException ex) {
+            System.err.println("updatEemployeeNameById method, TransformerException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
+        }
+        return false;
     }
 
 }
