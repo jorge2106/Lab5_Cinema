@@ -3,6 +3,7 @@
     Created on : 23/06/2016, 10:46:22 PM
     Author     : Jorge
 --%>
+<%@page import="beans.MoviesManager"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="beans.Movie"%>
