@@ -16,7 +16,6 @@
     int id = Integer.parseInt(movieId);
 
     ArrayList<Function> functions = managerFunct.get(id);
-    session.setAttribute("function", function);
         
     movieActual = manager.getBillboardById(id);
     session.setAttribute("movieActual", movieActual);

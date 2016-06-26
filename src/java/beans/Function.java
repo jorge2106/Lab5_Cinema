@@ -1,8 +1,8 @@
 package beans;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.TreeMap;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,16 +19,17 @@ public class Function implements Serializable {
     private Calendar dateHour;
     private int colums;
     private int rows;
-    private ArrayList<Integer> seats = new ArrayList<>();
+    private TreeMap<String, Integer> seats = new TreeMap<>();
 
     public Function() {
     }
 
-    public Function(int movieId, Calendar date, int colums, int rows) {
+    public Function(int movieId, Calendar date, int colums, int rows, TreeMap<String, Integer> seats) {
         this.movieId = movieId;
         this.dateHour = date;
         this.colums = colums;
         this.rows = rows;
+        this.seats = seats;
     }
 
     public int getMovieId() {
@@ -71,11 +72,11 @@ public class Function implements Serializable {
         this.dateHour = dateHour;
     }
 
-    public ArrayList<Integer> getSeats() {
+    public TreeMap<String, Integer> getSeats() {
         return seats;
     }
 
-    public void setSeats(ArrayList<Integer> seats) {
+    public void setSeats(TreeMap<String, Integer> seats) {
         this.seats = seats;
     }
 

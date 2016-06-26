@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.TreeMap;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -73,35 +74,24 @@ public class FunctionManager {
 
                     Element element = (Element) node;
 
-                    int day = Integer.parseInt(element.getElementsByTagName("date").
+                    int day = Integer.parseInt(element.getElementsByTagName("day").
                             item(0).getChildNodes().item(0).getNodeValue());
-                    int month = Integer.parseInt(element.getElementsByTagName("date").
-                            item(0).getChildNodes().item(1).getNodeValue());
-                    int year = Integer.parseInt(element.getElementsByTagName("date").
-                            item(0).getChildNodes().item(2).getNodeValue());
-                    int hour = Integer.parseInt(element.getElementsByTagName("hour").
+                    int month = Integer.parseInt(element.getElementsByTagName("month").
                             item(0).getChildNodes().item(0).getNodeValue());
-                    int min = Integer.parseInt(element.getElementsByTagName("hour").
-                            item(0).getChildNodes().item(1).getNodeValue());
+                    int year = Integer.parseInt(element.getElementsByTagName("year").
+                            item(0).getChildNodes().item(0).getNodeValue());
+                    int hour = Integer.parseInt(element.getElementsByTagName("hours").
+                            item(0).getChildNodes().item(0).getNodeValue());
+                    int min = Integer.parseInt(element.getElementsByTagName("min").
+                            item(0).getChildNodes().item(0).getNodeValue());
                     int rowCant = Integer.parseInt(element.getElementsByTagName("rowCant").
                             item(0).getChildNodes().item(0).getNodeValue());
                     int columnCant = Integer.parseInt(element.getElementsByTagName("columnCant").
                             item(0).getChildNodes().item(0).getNodeValue());
 
-                    NodeList nodeListSeats = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-
-                    for (int j = 0; j < nodeList.getLength(); j++) {
-
-                        Node nodeSeat = nodeList.item(i);
-
-                        if (node.getNodeType() == Node.ELEMENT_NODE) {
-
-                            Element elementSeat = (Element) node;
-                            
-                        }
-                    }
-                    
                     Calendar date = new GregorianCalendar(year, month, day, hour, min);
+
+                    functions.add(new Function(id, date, columnCant, rowCant, getSeatsList(id)));
                 }
             }
             return functions;
@@ -110,6 +100,30 @@ public class FunctionManager {
             System.err.println("XPathExpressionException: " + ex.getMessage() + "\n" + Arrays.toString(ex.getStackTrace()));
         }
         return null;
+    }
+
+    private TreeMap<String, Integer> getSeatsList(int id) throws XPathExpressionException {
+
+        String expression = String.format("/functions/function[@id='%s']/seats", id);
+        TreeMap<String, Integer> seats = new TreeMap<>();
+        NodeList nodeListSeats = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+
+        for (int j = 0; j < nodeListSeats.getLength(); j++) {
+
+            Node nodeSeat = nodeListSeats.item(j);
+
+            if (nodeSeat.getNodeType() == Node.ELEMENT_NODE) {
+
+                Element elementSeat = (Element) nodeSeat;
+
+                String idS = nodeSeat.getAttributes().getNamedItem("id").getNodeValue();
+                int state = Integer.parseInt(elementSeat.getElementsByTagName("state").
+                        item(0).getChildNodes().item(0).getNodeValue());
+
+                seats.put(idS, state);
+            }
+        }
+        return seats;
     }
 
 }
