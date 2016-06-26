@@ -22,14 +22,15 @@ import org.xml.sax.SAXException;
 
 public class MoviesManager {
 
-    private String xmlFile = "C:\\Users\\Justin\\Documents\\NetBeansProjects\\Lab5_Cinema\\web\\xmlFile\\Billboard.xml";
+    private String xmlFile;
     private FileInputStream file;
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
     private Document xmlDocument;
     private XPath xPath;
 
-    public MoviesManager() {
+    public MoviesManager(String xmlFile) {
+        this.xmlFile = xmlFile;
         loadFile();
     }
 
@@ -96,8 +97,7 @@ public class MoviesManager {
 
                     Element element = (Element) node;
                     int id = Integer.parseInt(node.getAttributes().getNamedItem("id").getNodeValue());
-                    String name = element.getElementsByTagName("name")
-                            .item(0).getChildNodes().item(0).getNodeValue();
+                    String name = element.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue();
                     String sinopsis = element.getElementsByTagName("sinopsis")
                             .item(0).getChildNodes().item(0).getNodeValue();
                     String urlImage = element.getElementsByTagName("urlImage")

@@ -17,11 +17,10 @@
             <%@include file="header.jsp" %>
             <%@include file="menu.jsp" %>
         </header>
-        <jsp:useBean id="manager" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movie" scope="session" class="beans.Movie" />
         <section>
             <%
-                getServletContext().getRealPath("xmlFile/Billboard.xml");
+                MoviesManager manager = new MoviesManager(getServletContext().getRealPath("xmlFile/Billboard.xml"));
                 ArrayList movies = manager.getAllBillboardMovies();
                 for (int i = 0; i < movies.size(); i++) {
                     movie = (Movie) movies.get(i);

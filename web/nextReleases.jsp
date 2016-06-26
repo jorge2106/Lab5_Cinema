@@ -22,10 +22,10 @@
             <%@include file="menu.jsp" %>
         </header>
 
-        <jsp:useBean id="managerNext" scope="session" class="beans.MoviesManager" />
         <jsp:useBean id="movieNext" scope="session" class="beans.Movie" />
         <section>
             <%
+                MoviesManager managerNext = new MoviesManager(getServletContext().getRealPath("xmlFile/Billboard.xml"));
                 ArrayList movies = managerNext.getAllNextReleasesMovies();
                 System.out.println(movies.toString());
                 for (int i = 0; i < movies.size(); i++) {
