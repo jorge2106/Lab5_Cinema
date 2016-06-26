@@ -13,20 +13,22 @@
             <%@include file="header.jsp" %>
             <%@include file="menu.jsp" %>
         </header>
-        <h3>Seleccione los asientos</h3>
-        <% String columns = "ABCDE"; %>
-        <table style="width:100%">
+        <form method="get" action="payment.jsp">
+            <h3>Seleccione los asientos</h3>
+            <% String columns = "ABCDE"; %>
+            <table style="width:100%">
 
-            <% for (int i = 1; i <= 4; i++) { %>
-            <tr>
-                <% for (int j = 0; j < columns.length(); j++) { %>
-                <td>
-                    <input type="submit" value="<%= "" + columns.charAt(j) + i%>"/>
-                </td>
-                <% } %>
-            </tr>
-            <% }%>
-        </table>
-        <input type="submit" value="Continuar"/>
+                <% for (int i = 1; i <= 4; i++) { %>
+                <tr>
+                    <% for (int j = 0; j < columns.length(); j++) {%>
+                    <td>
+                        <input type="submit" value="<%= "" + columns.charAt(j) + i%>"/>
+                    </td>
+                    <% } %>
+                </tr>
+                <% }%>
+            </table>
+            <input type="submit" value="Continuar"/>
+        </form>
     </body>
 </html>

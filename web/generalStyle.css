@@ -107,6 +107,12 @@ label {
     font-size: 30px;
 }
 
+h1 {
+   text-align: center;
+    color: white;
+    font-size: 100px; 
+}
+
 h2 {
     text-align: center;
     color: white;

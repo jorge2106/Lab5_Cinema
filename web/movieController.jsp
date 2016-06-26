@@ -27,8 +27,6 @@
 
         session.setAttribute("function1", function1);
         session.setAttribute("function2", function2);
-    } else {
-        boolean isComing = true;
     }
 
     movieActual = manager.getBillboardById(id);
