@@ -15,9 +15,10 @@
         <title>FilMax</title>
     </head>
     <body>
-        <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
-        <%@include file="header.jsp" %>
-        <%@include file="menu.jsp" %>
+        <header>
+            <%@include file="header.jsp" %>
+            <%@include file="menu.jsp" %>
+        </header>
 
         <jsp:useBean id="movieActual" scope="session" type="beans.Movie" />
 
@@ -28,7 +29,7 @@
             String urlVideo = movieActual.getUrlVideo();
         %>
     <center>
-        <table>
+        <table >
             <tr>
                 <td>
                     <h1><%=name%></h1>

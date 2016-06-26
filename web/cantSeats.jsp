@@ -14,9 +14,10 @@
         <title>Cinema</title>
     </head>
     <body>
-        <img src="img/cinta_cinematografica_by_martuuchiis-d4dq5it.png" alt="Cinema">
-        <%@include file="header.jsp" %>
-        <%@include file="menu.jsp" %>
+        <header>
+            <%@include file="header.jsp" %>
+            <%@include file="menu.jsp" %>
+        </header>
     <center>
         <h1>Costo de las entradas<br> Niños: 2500<br> Adultos: 3500</h1>
         <h1>Digite la cantidad de asientos que desea comprar</h1>
