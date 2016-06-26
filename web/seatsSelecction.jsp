@@ -20,15 +20,28 @@
             <%@include file="menu.jsp" %>
         </header>
         <h3>Seleccione los asientos</h3>
-        <% String columns = "ABCDE"; %>
+        <% String columns = "ABCDE";
+            String rows = "1234";%>
         <table style="width:100%">
-
-            <% for (int i = 1; i <= 4; i++) { %>
             <tr>
-                <% for (int j = 0; j < columns.length(); j++) { %>
+                <% for (int h = -1; h < columns.length(); h++) { %>
                 <td>
-                    <input type="submit" value="<%= "" + columns.charAt(j) + i%>"/>
+                    <% if (h != -1) {%>
+                    <%=columns.charAt(h)%>
+                    <%  } %>
                 </td>
+                <% } %>
+            </tr>
+            <% for (int i = 0; i < rows.length(); i++) { %>
+            <tr>
+                <% for (int j = 0; j <= columns.length(); j++) { %>
+                <td>
+                    <% if (j == 0) {%>
+                    <%=rows.charAt(i)%>
+                    <%} else { %>
+                    <input type="checkbox">
+                    <% } %>
+                </td>  
                 <% } %>
             </tr>
             <% }%>
